@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f7fb" />
+  <title>Teamflow | Student Project Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="dashboard">
+  <header class="topbar">
+    <a class="brand" href="dashboard.html"><span class="brand-mark">T</span><span>teamflow<small>STUDENT PROJECT HUB</small></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="dashboard.html">Overview</a><a href="projects.html">Projects</a><a href="tasks.html">Tasks</a><a href="team.html">Team</a>
+    </nav>
+    <button class="profile profile-link signout-button" id="signout-button" type="button" aria-label="Sign out"><span class="avatar">↗</span><span>Sign out<small>End your session</small></span></button>
+  </header>
+  <main class="page-wrap" id="app-main">
+    <section class="welcome-row"><div><p class="eyebrow">YOUR WORKSPACE</p><h1>Good to see you, teammate <span>✦</span></h1><p class="muted">Keep your academic projects moving forward.</p></div><a class="button primary" href="projects.html">＋ New project</a></section>
+    <section class="stats-grid" id="dashboard-stats" aria-label="Project statistics"></section>
+    <section class="content-grid">
+      <div class="panel project-panel"><div class="section-heading"><div><p class="eyebrow">WORKSPACE</p><h2>Your projects</h2></div><a class="text-link" href="projects.html">All projects <span>→</span></a></div><div id="dashboard-projects"></div></div>
+      <aside class="panel task-panel"><div class="section-heading"><div><p class="eyebrow">UP NEXT</p><h2>Upcoming tasks</h2></div><a class="text-link" href="tasks.html">View all <span>→</span></a></div><div id="dashboard-tasks"></div></aside>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Team | Teamflow</title><link rel="stylesheet" href="style.css" /><script src="script.js" defer></script></head>
+<body data-page="team">
+  <header class="topbar"><a class="brand" href="dashboard.html"><span class="brand-mark">T</span><span>teamflow<small>STUDENT PROJECT HUB</small></span></a><nav class="main-nav" aria-label="Main navigation"><a href="dashboard.html">Overview</a><a href="projects.html">Projects</a><a href="tasks.html">Tasks</a><a class="active" href="team.html">Team</a></nav><button class="profile profile-link signout-button" id="signout-button" type="button" aria-label="Sign out"><span class="avatar">↗</span><span>Sign out<small>End your session</small></span></button></header>
+  <main class="page-wrap" id="app-main">
+    <section class="welcome-row"><div><p class="eyebrow">COLLABORATE</p><h1>Your team</h1><p class="muted">Manage teammates and add them to the projects they are working on.</p></div></section>
+    <section class="panel form-panel"><div class="section-heading"><div><p class="eyebrow">GROW YOUR TEAM</p><h2>Add a teammate</h2></div></div>
+      <form id="member-form" class="form-grid member-form"><label>Name<input name="name" required maxlength="50" placeholder="e.g. Alex Morgan" /></label><label>Email<input name="email" type="email" maxlength="100" placeholder="alex@school.edu" /></label><div class="form-actions"><button class="button primary" type="submit">＋ Add teammate</button></div></form>
+    </section>
+    <section class="list-section"><div class="section-heading"><div><p class="eyebrow">PEOPLE</p><h2>Team members</h2></div><span class="muted" id="member-count"></span></div><div id="members-list" class="member-grid"></div></section>
+    <section class="list-section"><div class="section-heading"><div><p class="eyebrow">PROJECT ACCESS</p><h2>Project membership</h2></div></div><div id="membership-list" class="membership-list"></div></section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Teamflow</title><link rel="stylesheet" href="style.css" /><script src="script.js" defer></script>
+</head>
+<body data-page="projects">
+  <header class="topbar"><a class="brand" href="dashboard.html"><span class="brand-mark">T</span><span>teamflow<small>STUDENT PROJECT HUB</small></span></a><nav class="main-nav" aria-label="Main navigation"><a href="dashboard.html">Overview</a><a class="active" href="projects.html">Projects</a><a href="tasks.html">Tasks</a><a href="team.html">Team</a></nav><button class="profile profile-link signout-button" id="signout-button" type="button" aria-label="Sign out"><span class="avatar">↗</span><span>Sign out<small>End your session</small></span></button></header>
+  <main class="page-wrap" id="app-main">
+    <section class="welcome-row"><div><p class="eyebrow">PLAN AND BUILD</p><h1>Projects</h1><p class="muted">Keep project details, deadlines, and progress in one place.</p></div></section>
+    <section class="panel form-panel"><div class="section-heading"><div><p class="eyebrow">GET STARTED</p><h2>Create a project</h2></div></div>
+      <form id="project-form" class="form-grid">
+        <label>Project name<input name="name" required maxlength="70" placeholder="e.g. Campus sustainability study" /></label>
+        <label>Course or class<input name="course" maxlength="50" placeholder="e.g. Environmental Science" /></label>
+        <label>Project deadline<input name="deadline" type="date" /></label>
+        <label class="wide-field">Description<textarea name="description" rows="2" maxlength="240" placeholder="What is your team working on?"></textarea></label>
+        <div class="wide-field form-actions"><button class="button primary" type="submit">＋ Create project</button></div>
+      </form>
+    </section>
+    <section class="list-section"><div class="section-heading"><div><p class="eyebrow">YOUR WORKSPACE</p><h2>All projects</h2></div><span class="muted" id="project-count"></span></div><div id="projects-list" class="project-grid"></div></section>
+  </main>
+  <dialog id="project-dialog" class="edit-dialog"><form id="edit-project-form"><div class="section-heading"><div><p class="eyebrow">PROJECT SETTINGS</p><h2>Edit project</h2></div><button type="button" class="icon-button" data-action="close-dialog" aria-label="Close">×</button></div><input type="hidden" name="id" /><label>Project name<input name="name" required maxlength="70" /></label><label>Course or class<input name="course" maxlength="50" /></label><label>Project deadline<input name="deadline" type="date" /></label><label>Description<textarea name="description" rows="3" maxlength="240"></textarea></label><div class="form-actions"><button type="button" class="button secondary" data-action="close-dialog">Cancel</button><button class="button primary" type="submit">Save changes</button></div></form></dialog>
+</body>
+</html>

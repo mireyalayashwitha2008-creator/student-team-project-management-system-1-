@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f7fb" />
+  <title>Sign in | Teamflow</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="signin">
+  <main class="page-wrap signin-wrap">
+    <section class="panel signin-panel">
+      <a class="brand signin-brand" href="/">
+        <span class="brand-mark">T</span>
+        <span>teamflow<small>STUDENT PROJECT HUB</small></span>
+      </a>
+      <p class="eyebrow">WELCOME BACK</p>
+      <h1>Sign in to your workspace</h1>
+      <p class="muted">Enter your account details to continue to Teamflow.</p>
+      <form id="signin-form" class="signin-form">
+        <label id="name-field" hidden>Your name<input name="name" autocomplete="name" maxlength="50" /></label>
+        <label>Email address<input name="email" type="email" autocomplete="username" required placeholder="you@school.edu" /></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" minlength="8" maxlength="72" required placeholder="Enter your password" /></label>
+        <button class="button primary" type="submit">Sign in</button>
+      </form>
+      <p id="signin-feedback" class="signin-feedback" role="status" aria-live="polite"></p>
+      <button id="auth-mode-toggle" class="text-button auth-mode-toggle" type="button">Need an account? Create one</button>
+    </section>
+  </main>
+</body>
+</html>

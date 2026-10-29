@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Tasks | Teamflow</title><link rel="stylesheet" href="style.css" /><script src="script.js" defer></script></head>
+<body data-page="tasks">
+  <header class="topbar"><a class="brand" href="dashboard.html"><span class="brand-mark">T</span><span>teamflow<small>STUDENT PROJECT HUB</small></span></a><nav class="main-nav" aria-label="Main navigation"><a href="dashboard.html">Overview</a><a href="projects.html">Projects</a><a class="active" href="tasks.html">Tasks</a><a href="team.html">Team</a></nav><button class="profile profile-link signout-button" id="signout-button" type="button" aria-label="Sign out"><span class="avatar">↗</span><span>Sign out<small>End your session</small></span></button></header>
+  <main class="page-wrap" id="app-main">
+    <section class="welcome-row"><div><p class="eyebrow">MAKE PROGRESS</p><h1>Tasks</h1><p class="muted">Assign work, set due dates, and keep everyone up to date.</p></div></section>
+    <section class="panel form-panel"><div class="section-heading"><div><p class="eyebrow">ADD TO YOUR PLAN</p><h2>Create a task</h2></div></div>
+      <form id="task-form" class="form-grid">
+        <label>Task name<input name="title" required maxlength="90" placeholder="e.g. Gather research sources" /></label>
+        <label>Project<select name="projectId" required></select></label>
+        <label>Assign to<select name="assigneeId"></select></label>
+        <label>Due date<input name="dueDate" type="date" /></label>
+        <div class="wide-field form-actions"><button class="button primary" type="submit">＋ Add task</button></div>
+      </form>
+    </section>
+    <section class="list-section"><div class="section-heading"><div><p class="eyebrow">TEAM TO-DO LIST</p><h2>All tasks</h2></div><span class="muted" id="task-count"></span></div><div class="panel task-list" id="tasks-list"></div></section>
+  </main>
+</body>
+</html>
